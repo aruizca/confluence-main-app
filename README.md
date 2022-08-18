@@ -23,10 +23,10 @@ workspace/
 ├── confluence-sample-app
 ```
 
-2. Package the companion sample-app
+2. Install the companion sample-app in your local repository
 ```shell
 # From confluence-sample-app directory
-mvn clean package
+mvn clean install
 ```
 
 3. Package the main-app

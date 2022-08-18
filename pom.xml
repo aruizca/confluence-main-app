@@ -52,8 +52,7 @@
             <groupId>${project.groupId}</groupId>
             <artifactId>sample-app</artifactId>
             <version>1.0.0-SNAPSHOT</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/../confluence-sample-app/target/sample-app-1.0.0-SNAPSHOT.jar</systemPath>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
