@@ -3,7 +3,8 @@
 ---------------------
 
 ## Overview
-This very simple Confluence app was created to investigate how to package an app (this one) along with another dependency app ([sample-app](https://github.com/aruizca/confluence-sample-app)) 
+This very simple Confluence app was created to investigate how to package an app (this one) along with another 
+companion app ([sample-app](https://github.com/aruizca/confluence-sample-app)) 
 inside an OBR file, from which they are both installed in Confluence.
 
 ### Technical Requirements
@@ -22,7 +23,7 @@ workspace/
 ├── confluence-sample-app
 ```
 
-2. Package the sample-app
+2. Package the companion sample-app
 ```shell
 # From confluence-sample-app directory
 mvn clean package
@@ -35,11 +36,12 @@ mvn clean package
 ```
 This will generate the OBR file on: `/target/main-app-1.0.0-SNAPSHOT.obr`
 
-4. Upload OBR file to your Confluence instance
+4. Upload OBR file to your Confluence instance using UPM
 
 ### Current problem!!!
 
-Only the main app is installed but the sample app is not.
+In the UPM only the main app appear as installed and the sample app is not.
+
 
 ## OBR tutorials and other guides used
 
