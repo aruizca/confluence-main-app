@@ -62,7 +62,7 @@ then
 fi
 
 # Set current folder to where the pom.xml is
-cd "$(dirname "$0")"/..
+cd "$(dirname "$0")"/../main-app
 
 if [[ ${ARCHITECTURE} == "arm64" ]]
  then

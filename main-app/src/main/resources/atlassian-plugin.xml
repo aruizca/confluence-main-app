@@ -7,4 +7,13 @@
         <param name="plugin-logo">images/pluginLogo.png</param>
     </plugin-info>
 
+    <xhtml-macro name="mainhelloworld" class="com.aruizca.confluence.mainapp.macros.MainHelloWorldMacro" key='main-helloworld-macro'>
+        <category name="formatting"/>
+        <parameters/>
+    </xhtml-macro>
+
+    <rest key="rest-api" path="/mainapi" version="1.0">
+        <description>MAIN REST API</description>
+    </rest>
+
 </atlassian-plugin>
