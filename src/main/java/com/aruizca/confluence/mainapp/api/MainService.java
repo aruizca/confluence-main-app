@@ -1,4 +1,4 @@
-package com.aruizca.confluence.mainapp.service.api;
+package com.aruizca.confluence.mainapp.api;
 
 public interface MainService {
 
