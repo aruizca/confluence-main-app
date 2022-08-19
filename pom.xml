@@ -102,7 +102,7 @@
 
                         <!-- Add package import here -->
                         <Import-Package>
-                            com.aruizca.confluence.sampleapp.*;
+                            com.aruizca.confluence.sampleapp.api*;
                             org.springframework.osgi.*;resolution:="optional",
                             org.eclipse.gemini.blueprint.*;resolution:="optional",
                             *;resolution:="optional"
