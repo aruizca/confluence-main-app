@@ -75,6 +75,14 @@
                         </pluginDependency>
                     </pluginDependencies>
 
+                    <!-- For Confluence development server, otherwise sample-app is not installed -->
+                    <pluginArtifacts>
+                        <pluginArtifact>
+                            <groupId>${project.groupId}</groupId>
+                            <artifactId>sample-app</artifactId>
+                        </pluginArtifact>
+                    </pluginArtifacts>
+
                     <!-- See here for an explanation of default instructions: -->
                     <!-- https://developer.atlassian.com/docs/advanced-topics/configuration-of-instructions-in-atlassian-plugins -->
                     <instructions>
@@ -87,9 +95,9 @@
 
                         <!-- Add package import here -->
                         <Import-Package>
-                            com.aruizca.confluence.sampleapp.api*;
                             org.springframework.osgi.*;resolution:="optional",
                             org.eclipse.gemini.blueprint.*;resolution:="optional",
+                            com.aruizca.confluence.sampleapp.api*;,
                             *;resolution:="optional"
                         </Import-Package>
 
