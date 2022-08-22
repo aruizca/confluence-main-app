@@ -49,14 +49,14 @@
             <version>${atlassian.spring.scanner.version}</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>sample-app</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-<!--            <scope>provided</scope>-->
-            <scope>system</scope>
-            <systemPath>${project.basedir}/../confluence-sample-app/target/sample-app-1.0.0-SNAPSHOT.jar</systemPath>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>${project.groupId}</groupId>-->
+<!--            <artifactId>sample-app</artifactId>-->
+<!--            <version>1.0.0-SNAPSHOT</version>-->
+<!--&lt;!&ndash;            <scope>provided</scope>&ndash;&gt;-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${project.basedir}/../confluence-sample-app/target/sample-app-1.0.0-SNAPSHOT.jar</systemPath>-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>
