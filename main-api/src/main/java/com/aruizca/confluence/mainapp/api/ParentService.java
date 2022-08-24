@@ -1,5 +1,5 @@
 package com.aruizca.confluence.mainapp.api;
 
-public interface OtherService {
+public interface ParentService {
     String getMessage();
 }
