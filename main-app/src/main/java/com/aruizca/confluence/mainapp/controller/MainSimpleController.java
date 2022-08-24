@@ -6,7 +6,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.core.Response;
 
-@Path("/")
+@Path("/simple")
 public class MainSimpleController {
 
     private final MainSimpleService mainSimpleService;
@@ -16,7 +16,7 @@ public class MainSimpleController {
     }
 
     @GET
-    @Path("simple")
+    @Path("/hello")
     public Response sample() {
         return Response.ok("OK with message" + mainSimpleService.getMessage()).build();
     }

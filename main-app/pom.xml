@@ -118,6 +118,29 @@
                     </instructions>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>com.atlassian.plugin</groupId>
+                <artifactId>atlassian-spring-scanner-maven-plugin</artifactId>
+                <version>${atlassian.spring.scanner.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>atlassian-spring-scanner</goal>
+                        </goals>
+                        <phase>process-classes</phase>
+                    </execution>
+                </executions>
+                <configuration>
+                    <verbose>false</verbose>
+                    <scannedDependencies>
+                        <dependency>
+                            <groupId>com.atlassian.pocketknife</groupId>
+                            <artifactId>atlassian-pocketknife-querydsl</artifactId>
+                        </dependency>
+                    </scannedDependencies>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 </project>

@@ -6,7 +6,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.core.Response;
 
-@Path("/")
+@Path("/osgi")
 public class MainOsgiController {
 
     private final MainService mainService;
@@ -16,7 +16,7 @@ public class MainOsgiController {
     }
 
     @GET
-    @Path("osgi")
+    @Path("/hello")
     public Response sample() {
         return Response.ok("OK with message" + mainService.getMessage()).build();
     }
