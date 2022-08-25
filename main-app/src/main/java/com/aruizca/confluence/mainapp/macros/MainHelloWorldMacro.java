@@ -18,7 +18,7 @@ public class MainHelloWorldMacro implements Macro {
     }
 
     public String execute(Map<String, String> map, String s, ConversionContext conversionContext) throws MacroExecutionException {
-        return "<h2>Hello World from (main) </h2>";
+        return "<h2>Hello World using " + mainService.getMessage() + "</h2>";
     }
 
     public BodyType getBodyType() {

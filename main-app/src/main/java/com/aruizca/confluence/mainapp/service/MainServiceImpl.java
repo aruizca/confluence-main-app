@@ -14,7 +14,7 @@ public class MainServiceImpl implements MainService {
     @Autowired
     public MainServiceImpl(@ComponentImport SampleService sampleService) {
         this.sampleService = sampleService;
-        System.out.println("MainService sampleService " + sampleService.getMessage());
+        System.out.println("MainService using sampleService " + sampleService.getMessage());
     }
 
     public String getMessage() {
